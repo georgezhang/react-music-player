@@ -2,6 +2,7 @@
 
 exports[`Locale test should render default locale with en_US 1`] = `
 <ReactJkMusicPlayer
+  alwaysMobile={false}
   audioLists={Array []}
   autoHiddenCover={false}
   autoPlay={true}
@@ -698,6 +699,7 @@ exports[`Locale test should render default locale with en_US 1`] = `
 
 exports[`Locale test should render locale with zh_CN 1`] = `
 <ReactJkMusicPlayer
+  alwaysMobile={false}
   audioLists={Array []}
   autoHiddenCover={false}
   autoPlay={true}

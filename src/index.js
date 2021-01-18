@@ -179,6 +179,7 @@ export default class ReactJkMusicPlayer extends PureComponent {
       fadeIn: 0,
       fadeOut: 0,
     },
+    alwaysMobile: false,
   }
 
   static propTypes = PROP_TYPES
@@ -255,6 +256,7 @@ export default class ReactJkMusicPlayer extends PureComponent {
       autoHiddenCover,
       showDestroy,
       responsive,
+      alwaysMobile,
     } = this.props
 
     const { locale } = this
@@ -470,7 +472,7 @@ export default class ReactJkMusicPlayer extends PureComponent {
         ref={this.player}
         tabIndex="-1"
       >
-        {toggle && isMobile && responsive && (
+        {(alwaysMobile || (toggle && isMobile && responsive)) && (
           <AudioPlayerMobile
             playing={playing}
             loading={loading}
