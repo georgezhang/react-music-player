@@ -16,3 +16,4 @@ env
 Dockerfile
 *.conf
 .docz
+lib
